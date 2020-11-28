@@ -1,27 +1,66 @@
 html,
 body {
-	height: 100%;
-}
-body {
+	height: 100vh;
+	width: 100vw;
 	margin: 0;
+	box-sizing: border-box;
 }
 
 #webchat {
+	box-sizing: border-box;
 	float: right;
 	height: 100%;
 	width: 50%;
+	padding: 2px 3px;
+}
+.side-container {
+	box-sizing: border-box;
+	float: left;
+	width: 40%;
+	height: 100%;
+	padding: 3rem;
+}
+
+.side-container h1 {
+	color: #266398;
+	font-weight: bold;
+	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+	font-size: 2.2vw;
+	text-align: left;
+	padding-bottom: 2vh;
+}
+
+.side-container p {
+	color: #92a6b7;
+	font-family: "Segoe UI";
+	font-weight: 400;
+	font-size: 1.2vw;
+	padding-bottom: 1vh;
+	width: 80%;
+	text-align: left;
+}
+
+.side-container img {
+	display: block;
+	width: 120%;
+	height: auto;
+	margin-left: auto;
+	padding-top: 2rem;
+	margin-right: auto;
+	text-align: center;
+	position: relative;
+	bottom: 0px;
 }
 
 #webchat[watermark="true"] [role="complementary"] ul[role="list"]::after {
 	content: "Powered By ...";
-	background: linear-gradient(rgba(248, 248, 248, 0), rgba(248, 248, 248, 0.63), #f8f8f8 40%);
+	background-color: rgb(234, 243, 251);
 	bottom: 0;
 	right: 0;
 	color: #707070;
 	display: block;
 	font-family: "Segoe Semibold", Calibri, "Helvetica Neue", Arial, sans-serif;
 	font-size: 1vw;
-	padding: 15px 10px 10px;
 	position: absolute;
 	position: sticky;
 	text-align: right;
@@ -32,4 +71,12 @@ body {
 	left: 50%;
 	right: unset;
 	transform: translate(-50%, 0);
+}
+#webchat
+	> div
+	> div
+	> div.webchat__basic-transcript.webchat--css-ukirk-1tdc372.webchat--css-ukirk-1rr4qq7
+	> div
+	> ul {
+	padding-left: 2rem;
 }
