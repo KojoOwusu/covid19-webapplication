@@ -55,7 +55,7 @@ a {
 
 .side-container p {
 	color: #92a6b7;
-	font-family: "Segoe UI";
+	font-family: "Segoe UI", Tahoma;
 	font-weight: 700;
 	font-size: 1.2vw;
 	width: 80%;
@@ -158,6 +158,7 @@ a {
 	body {
 		display: flex;
 		flex-direction: column;
+		overflow: auto;
 	}
 
 	.side-container,
@@ -169,6 +170,7 @@ a {
 #webchat p {
 	color: rgba(28, 30, 33, 0.65);
 	font-size: 1vw;
+	text-align: center;
 }
 #webchat .webchat__bubble__content {
 	border-radius: 2rem;
