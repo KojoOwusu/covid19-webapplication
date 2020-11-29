@@ -165,3 +165,15 @@ a {
 		width: 100vw;
 	}
 }
+
+#webchat p {
+	color: rgba(28, 30, 33, 0.65);
+	font-size: 1vw;
+}
+#webchat .webchat__bubble__content {
+	border-radius: 2rem;
+	border-width: 0px;
+}
+
+#webchat .webchat--css-ftgap-xdnm15 {
+}
