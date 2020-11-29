@@ -4,52 +4,107 @@ body {
 	width: 100vw;
 	margin: 0;
 	box-sizing: border-box;
+	display: flex;
+	flex-direction: row;
 }
-
+a {
+	text-decoration: none;
+}
 #webchat {
 	box-sizing: border-box;
+	flex: 50%;
 	float: right;
 	height: 100%;
 	width: 50%;
 	padding: 2px 3px;
 }
 .side-container {
+	flex: 50%;
 	box-sizing: border-box;
-	float: left;
 	width: 40%;
 	height: 100%;
-	padding: 3rem;
+	overflow: auto;
+	padding-bottom: 2rem;
+}
+.reference {
+	box-sizing: border-box;
+	display: flex;
+	width: 100%;
+	flex-direction: row;
+	justify-content: flex-end;
+	padding-right: 3rem;
+	align-items: center;
+	padding-left: 3rem;
+	padding-top: 2rem;
+}
+.reference > img {
+	width: 4vw;
+	height: auto;
+	padding-left: 2rem;
 }
 
 .side-container h1 {
 	color: #266398;
 	font-weight: bold;
 	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-	font-size: 2.2vw;
+	font-size: 2.4vw;
 	text-align: left;
-	padding-bottom: 2vh;
+	padding-left: 3rem;
+	padding-top: 1rem;
 }
 
 .side-container p {
 	color: #92a6b7;
 	font-family: "Segoe UI";
-	font-weight: 400;
+	font-weight: 700;
 	font-size: 1.2vw;
-	padding-bottom: 1vh;
 	width: 80%;
 	text-align: left;
+	padding-left: 3rem;
 }
 
-.side-container img {
+#sub-sub-heading {
+	font-size: 1vw;
+	font-weight: bold;
+	color: #19609d;
+	width: 80%;
+}
+
+.git-link {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	color: #62686e;
+	font-size: 0.8vw;
+	transition: all 0.3s;
+	font-weight: bold;
+	align-items: center;
+	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+	padding-top: 5rem;
+	width: fit-content;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.git-link:hover {
+	opacity: 50%;
+}
+
+.side-container > svg {
 	display: block;
-	width: 120%;
+	width: 38vw;
 	height: auto;
 	margin-left: auto;
-	padding-top: 2rem;
+	padding-top: 3rem;
 	margin-right: auto;
 	text-align: center;
 	position: relative;
 	bottom: 0px;
+}
+.git-link img {
+	width: 0.8vw;
+	height: auto;
+	margin-right: 1.2rem;
 }
 
 #webchat[watermark="true"] [role="complementary"] ul[role="list"]::after {
@@ -79,4 +134,34 @@ body {
 	> div
 	> ul {
 	padding-left: 2rem;
+}
+
+#virus,
+#virus_2,
+#virus_3,
+#virus_4 {
+	animation: virus 15s linear infinite;
+	transform-origin: center;
+	transform-box: fill-box;
+}
+
+@keyframes virus {
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(360deg);
+	}
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+	body {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.side-container,
+	#webchat {
+		width: 100vw;
+	}
 }

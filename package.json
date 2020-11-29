@@ -14,7 +14,10 @@
     "request-promise": "^4.2.5"
   },
   "scripts": {
-    "prestart": "npm install"
+    "prestart": "npm install",
+    "start": "nodemon server.js"
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "nodemon": "^2.0.6"
+  }
 }

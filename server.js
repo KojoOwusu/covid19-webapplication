@@ -28,7 +28,6 @@ app.listen(port, function () {
     console.log("Express server listening on port " + port);
 });
 
-console.log(process.env);
 
 function isUserAuthenticated() {
     // add here the logic to verify the user is authenticated
