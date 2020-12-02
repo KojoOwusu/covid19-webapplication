@@ -16,7 +16,12 @@ a {
 	flex: 1;
 	text-decoration: none;
 	max-width: 10%;
+	transition: all 0.3s;
 }
+a:link:active {
+	opacity: 50%;
+}
+
 #webchat {
 	box-sizing: border-box;
 	height: 100vh;
